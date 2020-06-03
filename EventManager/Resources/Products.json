@@ -1,0 +1,49 @@
+[
+  {
+    "Name": "Product 0",
+    "Listeners": []
+  },
+  {
+    "Name": "Product 1",
+    "Listeners": [
+      {
+        "Event": "EVENT_1",
+        "Listener": {
+          "Type": "ProductPrintNumberListener",
+          "Number": 1
+        }
+      },
+      {
+        "Event": "EVENT_4",
+        "Listener": {
+          "Type": "ProductPrintSumListener"
+        }
+      },
+      {
+        "Event": "EVENT_5",
+        "Listener": {
+          "Type": "ProductPrintSumListener"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Product 2",
+    "Listeners": [
+      {
+        "Event": "EVENT_2",
+        "Listener": {
+          "Type": "ProductPrintNumberListener",
+          "Number": 2
+        }
+      },
+      {
+        "Event": "EVENT_3",
+        "Listener": {
+          "Type": "ProductPrintNumberListener",
+          "Number": 2
+        }
+      }
+    ]
+  }
+]

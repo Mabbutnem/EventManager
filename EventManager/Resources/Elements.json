@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 0,
+    "Listeners": [
+      {
+        "Event": "EVENT_1",
+        "Listener": {
+          "Type": "ElementPrintNumberListener",
+          "Number": 0
+        }
+      }
+    ]
+  },
+  {
+    "Id": 1,
+    "Listeners": [
+      {
+        "Event": "EVENT_2",
+        "Listener": {
+          "Type": "ElementPrintNumberListener",
+          "Number": 1
+        }
+      },
+      {
+        "Event": "EVENT_2",
+        "Listener": {
+          "Type": "ElementPrintNumberListener",
+          "Number": 1
+        }
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Listeners": [
+      {
+        "Event": "EVENT_3",
+        "Listener": {
+          "Type": "ElementPrintNumberListener",
+          "Number": 2
+        }
+      },
+      {
+        "Event": "EVENT_4",
+        "Listener": {
+          "Type": "ElementPrintSumListener"
+        }
+      },
+      {
+        "Event": "EVENT_5",
+        "Listener": {
+          "Type": "ElementPrintNumberListener",
+          "Number": 2
+        }
+      }
+    ]
+  }
+]
