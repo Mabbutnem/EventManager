@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Event.Listeners
+namespace EventManager
 {
    #region SubTypes
    [JsonConverter(typeof(JsonSubtypes), "Type")]

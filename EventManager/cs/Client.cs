@@ -1,11 +1,10 @@
-﻿using Event.Listeners;
-using NLog;
+﻿using NLog;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using System.Text;
 
-namespace Event
+namespace EventManager
 {
    class Client
    {

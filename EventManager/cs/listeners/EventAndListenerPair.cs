@@ -1,9 +1,8 @@
-﻿using Event.Listeners;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Event
+namespace EventManager
 {
    class EventAndListenerPair<T>
    {

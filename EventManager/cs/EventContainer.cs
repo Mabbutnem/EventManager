@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Event
+namespace EventManager
 {
    #region Event Names
    enum EventType

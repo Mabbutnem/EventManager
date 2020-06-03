@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Event.Listeners
+namespace EventManager
 {
    class ProductPrintSumListener : Listener<Product>, IListener<int, int>
    {

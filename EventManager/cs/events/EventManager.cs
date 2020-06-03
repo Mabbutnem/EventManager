@@ -1,10 +1,9 @@
-﻿using Event.Listeners;
-using NLog;
+﻿using NLog;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace Event
+namespace EventManager
 {
    #region Interface
    interface IEventInvoker

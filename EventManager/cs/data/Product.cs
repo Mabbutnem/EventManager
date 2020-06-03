@@ -1,9 +1,8 @@
-﻿using Event.Listeners;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Event
+namespace EventManager
 {
    class Product
    {

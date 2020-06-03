@@ -1,11 +1,10 @@
-﻿using Event.Listeners;
+﻿using EventManager.cs.repository.product;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
-namespace Event
+namespace EventManager
 {
    class Program
    {
@@ -13,19 +12,11 @@ namespace Event
       {
          LogConf.SetLogConf();
 
-         Product[] products = new Product[] { };
-         Element[] elements = new Element[] { };
+         IProductRepo productRepo = new ProductJsonRepo();
+         IElementRepo elementRepo = new ElementJsonRepo();
 
-         using (StreamReader r = new StreamReader("../../../Resources/Products.json"))
-         {
-            string json = r.ReadToEnd();
-            products = JsonConvert.DeserializeObject<Product[]>(json);
-         }
-         using (StreamReader r = new StreamReader("../../../Resources/Elements.json"))
-         {
-            string json = r.ReadToEnd();
-            elements = JsonConvert.DeserializeObject<Element[]>(json);
-         }
+         Product[] products = productRepo.GetAll();
+         Element[] elements = elementRepo.GetAll();
 
          Client client = new Client();
 
