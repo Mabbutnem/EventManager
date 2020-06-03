@@ -49,8 +49,7 @@
       {
         "Event": "EVENT_5",
         "Listener": {
-          "Type": "ElementPrintNumberListener",
-          "Number": 2
+          "Type": "ElementPrintSumListener"
         }
       }
     ]

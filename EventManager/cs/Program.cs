@@ -1,5 +1,4 @@
-﻿using EventManager.cs.repository.product;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;

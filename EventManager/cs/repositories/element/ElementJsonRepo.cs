@@ -10,11 +10,9 @@ namespace EventManager
    {
       public Element[] GetAll()
       {
-         using (StreamReader r = new StreamReader("../../../Resources/Elements.json"))
-         {
-            string json = r.ReadToEnd();
-            return JsonConvert.DeserializeObject<Element[]>(json);
-         }
+         using StreamReader r = new StreamReader("../../../Resources/Elements.json");
+         string json = r.ReadToEnd();
+         return JsonConvert.DeserializeObject<Element[]>(json);
       }
    }
 }

@@ -33,8 +33,7 @@
       {
         "Event": "EVENT_2",
         "Listener": {
-          "Type": "ProductPrintNumberListener",
-          "Number": 2
+          "Type": "ProductPrintSumListener"
         }
       },
       {
