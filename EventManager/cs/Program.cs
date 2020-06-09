@@ -11,11 +11,11 @@ namespace EventManager
       {
          LogConf.SetLogConf();
 
-         IProductRepo productRepo = new ProductJsonRepo();
-         IElementRepo elementRepo = new ElementJsonRepo();
+         IRepository<Product> productRepo = new JsonRepository<Product>("Products");
+         IRepository<Element> elementRepo = new JsonRepository<Element>("Elements");
 
-         Product[] products = productRepo.GetAll();
-         Element[] elements = elementRepo.GetAll();
+         Product[] products = productRepo.FindAll();
+         Element[] elements = elementRepo.FindAll();
 
          Client client = new Client();
 

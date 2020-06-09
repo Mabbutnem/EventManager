@@ -4,8 +4,8 @@ using System.Text;
 
 namespace EventManager
 {
-   interface IProductRepo
+   interface IRepository<T>
    {
-      Product[] GetAll();
+      T[] FindAll();
    }
 }
